@@ -1,0 +1,192 @@
+-	intent: i_salam
+	examples: |
+	  - Hi
+	  - Hai
+	  - Halo
+	  - Hallo
+	  - Helo
+	  - Hello
+	  - Selamat pagi
+	  - Selamat siang
+	  - Selamat malam
+	  - Halo, selamat pagi
+	  - Halo, selamat siang
+	  - Halo, selamat malam
+
+-	intent: i_salam2
+	examples: |
+	  - Assalamualaikum
+	  - Aslmlkm
+	  - Asalamualaikum
+	  - Asalamu'alaikum
+	  - Assalamualaikum Warahmatullahi Wabarakatuh
+	  - Assalamualaikum Wr Wb
+	  - Assalamualaikum Wr. Wb
+
+-	intent: i_tanya_kuisioner_alumni
+	examples: |
+	  - Kuisioner Alumni
+	  - Kuisioner untuk Alumni
+	  - Form Kuisioner Alumni
+	  - Form Kuisioner untuk Alumni
+	  - Mohon tampilkan kuisioner
+	  - Mohon tampilkan Kuisioner Alumni
+	  - Mohon tampilkan Form Kuisioner Alumni
+	  - Mohon tampilkan Form Kuisioner untuk Alumni
+	  - Tolong tampil kuisioner
+	  - Tolong tampilkan Kuisioner Alumni
+	  - Tolong tampilkan Form Kuisioner Alumni
+	  - Tolong tampilkan Form Kuisioner untuk Alumni
+	  - Tampil Kuisioner Alumni
+	  - Tampil Kuisioner untuk Alumni
+	  - Tampilkan kuisioner
+	  - Tampilkan Kuisioner Alumni
+	  - Tampilkan Kuisioner untuk Alumni
+
+-	intent: i_tampil_daftar_alumni
+	examples: |
+	  - Formulir
+	  - Daftar formulir
+	  - Info daftar formulir
+	  - Informasi daftar formulir
+	  - List formulir
+	  - List daftar formulir
+	  - Semua formulir
+	  - Tampil daftar formulir
+	  - Tampilkan daftar formulir
+	  - Tampilkan list formulir
+
+-	intent: i_tanya_formulir_usulan_penulisan_ijazah
+	examples: |
+	  - Formulir usulan penulisan ijazah
+	  - Formulir usulan pembuatan ijazah
+	  - Formulir penulisan ijazah
+	  - Formulir pengusulan penulisan ijazah
+	  - Tampil form usulan penulisan ijazah
+	  - Tampil form penulisan ijazah
+	  - Tampil form untuk usulan penulisan ijazah
+	  - Tampil form penulisan ijazah
+	  - Tampilkan form usulan penulisan ijazah
+	  - Tampilkan form penulisan ijazah
+	  - Tampilkan form untuk usulan penulisan ijazah
+	  - Tampilkan form penulisan ijazah
+
+-	intent: i_tanya_ceklist_berkas_persyaratan_wisuda
+	examples: |
+	  - Formulir berkas checklist berkas persyaratan wisuda
+	  - Formulir berkas checklist persyaratan wisuda
+	  - Formulir checklist berkas persyaratan wisuda
+	  - Formulir checklist persyaratan wisuda
+	  - Formulir berkas persyaratan wisuda
+	  - Formulir persyaratan wisuda
+	  - Tampil berkas checklist berkas persyaratan wisuda
+	  - Tampil berkas checklist persyaratan wisuda
+	  - Tampil checklist berkas persyaratan wisuda
+	  - Tampil checklist persyaratan wisuda
+	  - Tampil berkas persyaratan wisuda
+	  - Tampil persyaratan wisuda
+
+-	intent: i_tanya_formulir_pelayanan_legalisir_ijazah/transkip
+	examples: |
+	  - Formulir pelayanan legalisir ijazah
+	  - Formulir pelayanan legalisir
+	  - Formulir legalisir Ijazah
+	  - Formulir pelayanan legalisir transkrip
+	  - Formulir legalisir transkrip
+	  - Tampil pelayanan legalisir ijazah
+	  - Tampil pelayanan legalisir
+	  - Tampil legalisir ijazah
+	  - Tampil pelayanan legalisir transkrip
+	  - Tampil legalisir transkrip
+	  - Tampilkan pelayanan legalisir ijazah
+	  - Tampilkan pelayanan legalisir
+	  - Tampilkan legalisir ijazah
+	  - Tampilkan pelayanan legalisir transkip
+	  - Tampilkan legalisir transkrip
+
+-	intent: i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris
+	examples: |
+	  - Tampilkan formulir pembuatan terjemahan ijazah ke bahasa inggris
+	  - Mohon tampilkan formulir  pembuatan terjemahan ijazah ke bahasa inggris
+	  - Formulir pembuatan terjemahan ijazah ke bahasa inggris
+	  - Tolong tampilkan formulir pembuatan terjemahan ijazah ke bahasa inggris
+	  - Lihat  formulir pembuatan terjemahan ijazah ke bahasa inggris
+	  - Formulir terjemahan ijazah ke bahasa inggris
+	  - Formulir pembuatan terjemahan ijazah bahasa inggris
+	  - Tampilkan formulir terjemahan ijazah ke bahasa inggris
+	  - Tampil formulir terjemahan ijazah bahasa inggris
+	  - Tampil formulir terjemahan ijazah untuk bahasa inggris
+
+-	intent: i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak
+	examples: |
+	  - Tampilkan formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang 
+	  - Tampilkan formulir surat keterangan pengganti ijazah yang rusak
+	  - Tampilkan formulir surat keterangan pengganti ijazah yang hilang
+	  - Mohon tampilkan formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
+	  - Mohon tampilkan formulir surat keterangan pengganti ijazah yang rusak
+	  - Mohon tampilkan formulir surat keterangan pengganti ijazah yang hilang
+	  - Formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
+	  - Formulir surat keterangan pengganti ijazah yang rusak
+	  - Formulir pembuatan surat keterangan ijazah rusak
+	  - Formulir surat keterangan pengganti ijazah yang hilang
+	  - Lihat formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
+	  - Lihat formulir surat keterangan pengganti ijazah yang rusak
+	  - Lihat formulir surat keterangan pengganti ijazah yang hilang
+	  - Tampil surat keterangan ijazah rusak
+	  - Tampil surat keterangan ijazah hilang
+	  - Tampil surat keterangan ijazah yang rusak
+	  - Tampil surat keterangan ijazah yang  hilang
+	  - Surat keterangan ijazah rusak
+	  - Surat keterangan ijazah hilang
+
+-	intent: i_tanya_surat_pernyataan_orang_tua
+	examples: |
+	  - Surat pernyataan orang tua
+	  - Surat pernyataan ortu
+	  - Surat pernyataan wali
+	  - Surat pernyataan wali mahasiswa
+	  - Mohon tampilkan surat pernyataan orang tua
+	  - Mohon tampilkan surat pernyataan wali mahasiswa
+	  - Mohon info surat pernyataan orang tua
+	  - Mohon info surat pernyataan wali mahasiswa
+	  - Melihat surat pernyataan orang tua
+	  - Melihat surat pernyataan wali mahasiswa
+	  - Tampilkan surat pernyataan orang tua
+	  - Tampilkan surat pernyataan wali mahasiswa
+	  - Tampil surat pernyataan untuk orang tua
+	  - Tampil surat pernyataan untuk wali mahasiswa
+	  - Apakah saya bisa minta informasi surat pernyataan orang tua
+	  - Apakah saya bisa minta informasi surat pernyataan wali mahasiswa
+	  - Informasi surat pernyataan orang tua
+	  - Informasi surat pernyataan wali mahasiswa
+
+-	intent: i_terima_kasih
+	examples: |
+	  - Terima kasih
+	  - Makasih
+	  - Thanks
+	  - Thank you
+	  - Ok
+	  - Oke
+	  - Ok thanks
+	  - Ok makasih
+	  - Ok terima kasih
+
+-	intent: i_self_bot
+	examples: |
+	  - Kamu siapa
+	  - Kamu syp
+	  - Syp kamu
+	  - Siapa kamu
+	  - Introduce
+	  - Perkenalan
+	  - Siapa
+	  - Syp
+	  - Test
+
+-	intent: i_help
+	examples: |
+	  - Panduan
+	  - Tolong
+	  - Help
+	  - Daftar panduan
