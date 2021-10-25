@@ -73,7 +73,7 @@ stories:
   - action	: utter_tanya_surat_pernyataan_orang_tua
 
 - story : tanya surat pernyataan orang tua (Stories 2)			
-	steps:
+  steps:
   - intent	: i_tanya_surat_pernyataan_orang_tua
   - action	: utter_tanya_surat_pernyataan_orang_tua
 
@@ -85,30 +85,30 @@ stories:
   - action   : utter_tanya_formulir_usulan_penulisan_ijazah
 
 - story : tanya formulir usulan penulisan ijazah (Stories 2)	
-	steps:
+  steps:
   - intent   :  i_tanya_formulir_usulan_penulisan_ijazah
   - action   : utter_tanya_formulir_usulan_penulisan_ijazah
 
 - story : tanya ceklist berkas persyaratan wisuda (Stories 1)	
-	steps:s
+  steps:
   - intent	:  i_tampil_daftar_formulir
   - action	:  utter_tampil_daftar_formulir
   - intent   :  i_tanya_ceklist_berkas_persyaratan_wisuda
-  -- action   : utter_tanya_ceklist_berkas_persyaratan_wisuda
+  - action   : utter_tanya_ceklist_berkas_persyaratan_wisuda
 
 - story : tanya ceklist berkas persyaratan wisuda (Stories 2)	
-	steps:
+  steps:
   - intent   :  i_tanya_ceklist_berkas_persyaratan_wisuda
   - action   : utter_tanya_ceklist_berkas_persyaratan_wisuda
 
 - story : tanya formulir pelayanan legalisir ijazah/transkip (Stories 1)		
-	steps:
+  steps:
   - intent	:  i_tampil_daftar_formulir
   - action	:  utter_tampil_daftar_formulir
   - intent   :  i_tanya_formulir_pelayanan_legalisir_ijazah/transkip
   - action   : utter_tanya_formulir_pelayanan_legalisir_ijazah/transkip
 
 - story : tanya formulir pelayanan legalisir ijazah/transkip (Stories 2)		
-	steps:
+  steps:
   - intent   :  i_tanya_formulir_pelayanan_legalisir_ijazah/transkip
   - action   : utter_tanya_formulir_pelayanan_legalisir_ijazah/transkip
