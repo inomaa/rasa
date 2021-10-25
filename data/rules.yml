@@ -2,12 +2,27 @@ version: "2.0"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: menjawab salam
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: i_salam
+  - action: utter_salam
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: menjawab salam v2
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: i_salam2
+  - action: utter_salam2
+
+- rule: menjawab pernyataan setuju dan terimakasih pengguna
+  steps:
+  - intent: i_terima_kasih
+  - action: utter_terima_kasih
+
+- rule: memperkenalkan diri bot
+  steps:
+  - intent: i_self_bot
+  - action: utter_self_bot
+
+- rule: membantu pengguna untuk menggunakan bot
+  steps:
+  - intent: i_help
+  - action: utter_help
