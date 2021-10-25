@@ -28,3 +28,87 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+ 
+- story : tanya kuisioner alumni 1
+  steps:
+  - intent:  i_tanya_kuisioner_alumni
+  - action: utter_tanya_kuisioner_alumni
+ 
+- story : tanya kuisioner alumni 2	
+  steps:
+  - intent: i_tampil_daftar_formulir
+  - action: utter_tampil_daftar_formulir
+  - intent: i_tanya_kuisioner_alumni
+  - action: utter_tanya_kuisioner_alumni
+   
+- story : tanya formulir pembuatan terjemahan ijazah bahasa inggris 1	
+  steps:
+  - intent	: i_tampil_daftar_formulir
+  - action	: utter_tampil_daftar_formulir
+  - intent	: i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris
+  - action	: utter_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris
+
+- story : tanya formulir pembuatan terjemahan ijazah bahasa inggris (Stories 2)     
+  steps:
+  - intent	: i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris
+  - action	: utter_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris
+
+- story : tanya formulir pembuatan surat keterangan ijazah rusak (Stories 1)	     
+  steps:
+  - intent	: i_tampil_daftar_formulir
+  - action	: utter_tampil_daftar_formulir
+  - intent	: i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak
+  - action	: utter_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak
+
+- story : tanya formulir pembuatan surat keterangan ijazah rusak (Stories 2)           
+  steps:
+  - intent	: i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak
+  - action	: utter_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak
+
+- story : tanya surat pernyataan orang tua (Stories 1)			
+  steps:
+  - intent	:  i_tampil_daftar_formulir
+  - action	: utter_tampil_daftar_formulir
+  - intent	: i_tanya_surat_pernyataan_orang_tua
+  - action	: utter_tanya_surat_pernyataan_orang_tua
+
+- story : tanya surat pernyataan orang tua (Stories 2)			
+	steps:
+  - intent	: i_tanya_surat_pernyataan_orang_tua
+  - action	: utter_tanya_surat_pernyataan_orang_tua
+
+- story : tanya formulir usulan penulisan ijazah. (Stories 1)			
+  steps:
+  - intent	:  i_tampil_daftar_formulir
+  - action	:  utter_tampil_daftar_formulir
+  - intent   :  i_tanya_formulir_usulan_penulisan_ijazah
+  - action   : utter_tanya_formulir_usulan_penulisan_ijazah
+
+- story : tanya formulir usulan penulisan ijazah (Stories 2)	
+	steps:
+  - intent   :  i_tanya_formulir_usulan_penulisan_ijazah
+  - action   : utter_tanya_formulir_usulan_penulisan_ijazah
+
+- story : tanya ceklist berkas persyaratan wisuda (Stories 1)	
+	steps:s
+  - intent	:  i_tampil_daftar_formulir
+  - action	:  utter_tampil_daftar_formulir
+  - intent   :  i_tanya_ceklist_berkas_persyaratan_wisuda
+  -- action   : utter_tanya_ceklist_berkas_persyaratan_wisuda
+
+- story : tanya ceklist berkas persyaratan wisuda (Stories 2)	
+	steps:
+  - intent   :  i_tanya_ceklist_berkas_persyaratan_wisuda
+  - action   : utter_tanya_ceklist_berkas_persyaratan_wisuda
+
+- story : tanya formulir pelayanan legalisir ijazah/transkip (Stories 1)		
+	steps:
+  - intent	:  i_tampil_daftar_formulir
+  - action	:  utter_tampil_daftar_formulir
+  - intent   :  i_tanya_formulir_pelayanan_legalisir_ijazah/transkip
+  - action   : utter_tanya_formulir_pelayanan_legalisir_ijazah/transkip
+
+- story : tanya formulir pelayanan legalisir ijazah/transkip (Stories 2)		
+	steps:
+  - intent   :  i_tanya_formulir_pelayanan_legalisir_ijazah/transkip
+  - action   : utter_tanya_formulir_pelayanan_legalisir_ijazah/transkip
