@@ -1,33 +1,252 @@
 version: "2.0"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  i_salam:
+    - Hi
+    - Hai
+    - Halo
+    - Hallo
+    - Helo
+    - Hello
+    - Selamat pagi
+    - Selamat siang
+    - Selamat Malam
+    - Halo selamat pagi
+    - Halo selamat siang
+    - Halo selamat malam
+
+  i_salam2:
+    - Assalamualaikum
+    - Aslmlkm
+    - Asalamu’alaikum
+    - Assalamualaikum warahmatullahi wabarakatuh
+    - Assalamualaikum wr wb
+    - Assalamualaikum wr. wb
+  
+  i_tanya_kuisioner_alumni:
+    - Kuisioner alumni
+    - Kuisioner untuk alumni
+    - Form kuisioner alumni
+    - Form kuisioner untuk alumni
+    - Mohon tampilkan kuisioner alumni
+    - Tolong tampilkan kuisioner alumni
+    - Mohon tampilkan form kuisioner alumni
+    - Tolong tampilkan form kuisioner alumni
+    - Mohon tampilkan form kuisioner untuk alumni
+    - Tolong tampilkan form kuisioner untuk alumni
+    - Mohon tampilkan kuisioner
+    - Tampil kuisioner
+    - Tampil kuisioner alumni
+    - Tampil kuisioner untuk alumni
+    - Tampilkan kuisioner
+    - Tampilkan kuisioner alumni
+    - Tampilkan kuisioner untuk alumni
+
+  i_tanya_formulir_usulan_penulisan_ijazah:
+    - Formulir usulan penulisan ijazah
+    - Formulir usulan pembuatan ijazah
+    - Formulir penulisan ijazah
+    - Formulir pengusulan penulisan ijazah
+    - Tampil form usulan penulisan ijazah
+    - Tampil form penulisan ijazah
+    - Tampil form untuk usulan penulisan ijazah
+    - Tampil form penulisan ijazah
+    - Tampilkan form usulan penulisan ijazah
+    - Tampilkan form penulisan ijazah
+    - Tampilkan form untuk usulan penulisan ijazah
+    - Tampilkan form penulisan ijazah
+
+  i_tanya_ceklist_berkas_persyaratan_wisuda:
+    - Formulir berkas checklist berkas persyaratan wisuda
+    - Formulir berkas checklist persyaratan wisuda
+    - Formulir checklist berkas persyaratan wisuda
+    - Formulir checklist persyaratan wisuda
+    - Formulir berkas persyaratan wisuda
+    - Formulir persyaratan wisuda
+    - Tampil berkas checklist berkas persyaratan wisuda
+    - Tampil berkas checklist persyaratan wisuda
+    - Tampil checklist berkas persyaratan wisuda
+    - Tampil checklist persyaratan wisuda
+    - Tampil berkas persyaratan wisuda
+    - Tampil persyaratan wisuda
+
+  i_tanya_formulir_pelayanan_legalisir_ijazah/transkip:
+    - Formulir pelayanan legalisir ijazah
+    - Formulir pelayanan legalisir
+    - Formulir legalisir Ijazah
+    - Formulir pelayanan legalisir transkrip
+    - Formulir legalisir transkrip
+    - Tampil pelayanan legalisir ijazah
+    - Tampil pelayanan legalisir
+    - Tampil legalisir ijazah
+    - Tampil pelayanan legalisir transkrip
+    - Tampil legalisir transkrip
+    - Tampilkan pelayanan legalisir ijazah
+    - Tampilkan pelayanan legalisir
+    - Tampilkan legalisir ijazah
+    - Tampilkan pelayanan legalisir transkip
+    - Tampilkan legalisir transkrip
+
+  i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris:
+    - Tampilkan formulir pembuatan terjemahan ijazah ke bahasa inggris
+    - Mohon tampilkan formulir  pembuatan terjemahan ijazah ke bahasa inggris
+    - Formulir pembuatan terjemahan ijazah ke bahasa inggris
+    - Tolong tampilkan formulir pembuatan terjemahan ijazah ke bahasa inggris
+    - Lihat  formulir pembuatan terjemahan ijazah ke bahasa inggris
+    - Formulir terjemahan ijazah ke bahasa inggris
+    - Formulir pembuatan terjemahan ijazah bahasa inggris
+    - Tampilkan formulir terjemahan ijazah ke bahasa inggris
+    - Tampil formulir terjemahan ijazah bahasa inggris
+    - Tampil formulir terjemahan ijazah untuk bahasa inggris
+
+  i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak:
+    - Tampilkan formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang 
+    - Tampilkan formulir surat keterangan pengganti ijazah yang rusak
+    - Tampilkan formulir surat keterangan pengganti ijazah yang hilang
+    - Mohon tampilkan formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
+    - Mohon tampilkan formulir surat keterangan pengganti ijazah yang rusak
+    - Mohon tampilkan formulir surat keterangan pengganti ijazah yang hilang
+    - formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
+    - formulir surat keterangan pengganti ijazah yang rusak
+    - Formulir pembuatan surat keterangan ijazah rusak
+    - formulir surat keterangan pengganti ijazah yang hilang
+    - Lihat formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
+    - Lihat formulir surat keterangan pengganti ijazah yang rusak
+    - Lihat formulir surat keterangan pengganti ijazah yang hilang
+    - Tampil surat keterangan ijazah rusak
+    - Tampil surat keterangan ijazah hilang
+    - Tampil surat keterangan ijazah yang rusak
+    - Tampil surat keterangan ijazah yang  hilang
+    - Surat keterangan ijazah rusak
+    - Surat keterangan ijazah hilang
+
+  i_tanya_surat_pernyataan_orang_tua:
+    - Surat pernyataan orang tua
+    - Surat pernyataan ortu
+    - Surat pernyataan wali
+    - Surat pernyataan wali mahasiswa
+    - Mohon tampilkan surat pernyataan orang tua
+    - Mohon tampilkan surat pernyataan wali mahasiswa
+    - Mohon info surat pernyataan orang tua
+    - Mohon info surat pernyataan wali mahasiswa
+    - Melihat surat pernyataan orang tua
+    - Melihat surat pernyataan wali mahasiswa
+    - Tampilkan surat pernyataan orang tua
+    - Tampilkan surat pernyataan wali mahasiswa
+    - Tampil surat pernyataan untuk orang tua
+    - Tampil surat pernyataan untuk wali mahasiswa
+    - Apakah saya bisa minta informasi surat pernyataan orang tua
+    - Apakah saya bisa minta informasi surat pernyataan wali mahasiswa
+    - Informasi surat pernyataan orang tua
+    - Informasi surat pernyataan wali mahasiswa
+
+  i_terima_kasih:
+    - Terima kasih
+    - Makasih
+    - Thanks
+    - Thank you
+    - Ok
+    - Oke
+    - Ok thanks
+    - Ok makasih
+    - Ok terima kasih
+    - Oke thanks
+    - Oke makasih
+    - Oke terima kasih
+    - Baik terima kasih
+    - Baik
+    - Sip
+
+  i_tampil_daftar_formulir:
+    - Formulir
+    - Daftar Formulir
+    - Tampil daftar formulir
+    - Tampilkan daftar formulir
+    - info daftar formulir
+    - informasi daftar formulir
+    - List daftar formulir
+    - List formulir
+    - Semua formulir
+    - Tampilkan list formulir
+
+  i_self_bot:
+    - Kamu siapa
+    - Kamu syp
+    - Syp kamu
+    - Siapa kamu
+    - Introduce
+    - Perkenalan
+    - Siapa
+    - Syp
+    - Test
+
+  i_help_:
+    - Panduan
+    - Tolong
+    - Help
+    - Daftar panduan
+
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_salam:
+    - text: "Hallo, ada yang bisa dibantu ?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_salam2:
+    - text: "Wa’alaikumsalam , ada yang bisa dibantu ?"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_tampil_daftar_formulir:
+    - text: 
+        "Berikut merupakan informasi dari list formulir : 
+            1. Kuisioner alumni       
+            2. Formulir usulan penulisan ijazah
+            3. Ceklist berkas persyaratan wisuda
+            4. Formulir pelayanan legalisir ijazah/transkrip
+            5. Formulir pembuatan terjemahan ijazah bahasa inggris 
+            6. Formulir pembuatan surat keterangan ijazah rusak
+            7. Surat pernyataan orang tua
+          Silahkan ketik formulir yang diinginkan
+        "
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_tanya_kuisioner_alumni:
+    - text: "Kuisioner alumni dapat diakses melalui link berikut :"
+    - link: "https://ia601503.us.archive.org/11/items/formulir-kuisioner-alumni/Formulir%20Kuisioner%20Alumni.pdf"
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_tanya_formulir_usulan_penulisan_ijazah:
+    - text: "Formulir usulan penulisan ijazah dapat diakses melalui link berikut :"
+    - link: "https://ia601401.us.archive.org/1/items/formulir-usulan-penulisan-ijazah/Formulir%20Usulan%20Penulisan%20Ijazah.pdf"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_tanya_ceklist_berkas_persyaratan_wisuda:
+    - text: "Formulir check list berkas persyaratan wisuda dapat diakses melalui link berikut :"
+    - link: "https://ia601404.us.archive.org/12/items/formulir-check-list-persyaratan-wisuda/Formulir%20Check%20List%20Persyaratan%20Wisuda.pdf"
+
+  utter_tanya_formulir_pelayanan_legalisir_ijazah/transkip:
+    - text: "Formulir pelayanan legalisir ijazah/transkip dapat diakses melalui link berikut :"
+    - link: "https://ia601501.us.archive.org/6/items/formulir-pelayanan-legalisir-ijazah-transkrip/Formulir%20Pelayanan%20Legalisir%20Ijazah%20Transkrip.pdf"
+
+  utter_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris:
+    - text: "Formulir pembuatan terjemahan ijazah ke bahasa inggris dapat diakses melalui link berikut :"
+    - link: "https://ia601509.us.archive.org/28/items/formulir-pelayanan-pembuatan-terjemahan-ijazah-transkrip-ke-dalam-bahasa-inggris/Formulir%20Pelayanan%20Pembuatan%20Terjemahan%20Ijazah%20Transkrip%20ke%20dalam%20Bahasa%20Inggris.pdf"
+
+  utter_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak:
+    - text: "Formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang dapat diakses melalui link berikut :"
+    - link: "https://ia601404.us.archive.org/24/items/formulir-pelayanan-pembuatan-surat-keterangan-pengganti-ijazah-transkrip-yang-rusak-hilang/Formulir%20Pelayanan%20Pembuatan%20Surat%20Keterangan%20Pengganti%20Ijazah%20Transkrip%20yang%20Rusak%20Hilang.pdf"
+
+  utter_tanya_surat_pernyataan_orang_tua:
+    - text: "Surat pernyataan orang tua/ wali mahasiswa dapat diakses melalui link berikut :"
+    - link: "https://ia601506.us.archive.org/22/items/formulir-surat-pernyataan-orang-tua-atau-wali-mahasiswa/Formulir%20Surat%20Pernyataan%20Orang%20Tua%20atau%20Wali%20Mahasiswa.pdf"
+
+  utter_terima_kasih:
+    - text: "Senang bisa membantu"
+
+  utter_self_bot:
+    - text: "Halo! Aku adalah Bot FAQ , Bot yang membantu menampilkan formulir akademik dan non akademik di universitas sriwijaya, ‘help’ untuk panduan lebih lanjut."
+
+  utterr_help_:
+    - text: "Untuk saat ini Bot FAQ hanya untuk menampilkan formulir, ketik ‘formulir’ untuk menampilkan daftar formulir yang ada."
+
+  utter_lainnya:
+    - text: "Informasi tidak tersedia. Mohon periksa lagi apakah terdapat kesalahan dalam pengetikan. Atau anda dapat melihat daftar list formulir dengan mengetikan “Daftar formulir” "
 
 session_config:
   session_expiration_time: 60
