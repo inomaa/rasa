@@ -21,8 +21,7 @@ responses:
 
   utter_salam2:
     - text: "Wa’alaikumsalam , ada yang bisa dibantu ?"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-
+    
   utter_tampil_daftar_formulir:
     - text: 
         "Berikut merupakan informasi dari list formulir : 
