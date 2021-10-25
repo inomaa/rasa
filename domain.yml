@@ -69,7 +69,7 @@ responses:
   utter_self_bot:
     - text: "Halo! Aku adalah Bot FAQ , Bot yang membantu menampilkan formulir akademik dan non akademik di universitas sriwijaya, ‘help’ untuk panduan lebih lanjut."
 
-  utterr_help_:
+  utter_help_:
     - text: "Untuk saat ini Bot FAQ hanya untuk menampilkan formulir, ketik ‘formulir’ untuk menampilkan daftar formulir yang ada."
 
   utter_lainnya:
