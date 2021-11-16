@@ -1,95 +1,106 @@
-version: '2.0'
+version: "2.0"
 config:
   store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- i_salam:
-    use_entities: true
-- i_salam2:
-    use_entities: true
-- i_tanya_kuisioner_alumni:
-    use_entities: true
-- i_tanya_formulir_usulan_penulisan_ijazah:
-    use_entities: true
-- i_tanya_ceklist_berkas_persyaratan_wisuda:
-    use_entities: true
-- i_tanya_formulir_pelayanan_legalisir_ijazah/transkip:
-    use_entities: true
-- i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris:
-    use_entities: true
-- i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak:
-    use_entities: true
-- i_tanya_surat_pernyataan_orang_tua:
-    use_entities: true
-- i_terima_kasih:
-    use_entities: true
-- i_tampil_daftar_formulir:
-    use_entities: true
-- i_self_bot:
-    use_entities: true
-- i_help_:
-    use_entities: true
-- i_tanya_formulir_pelayanan_legalisir_ijazah:
-    use_entities: true
-- i_tidak:
-    use_entities: true
-- i_ya:
-    use_entities: true
-entities: []
-slots: {}
+  - i_tanya_kuisioner_alumni:
+      use_entities: true
+  - i_tanya_formulir_usulan_penulisan_ijazah:
+      use_entities: true
+  - i_tanya_ceklist_berkas_persyaratan_wisuda:
+      use_entities: true
+  - i_tanya_formulir_pelayanan_legalisir_ijazah/transkip:
+      use_entities: true
+  - i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris:
+      use_entities: true
+  - i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak:
+      use_entities: true
+  - i_tanya_surat_pernyataan_orang_tua:
+      use_entities: true
+  - i_terima_kasih:
+      use_entities: true
+  - restart:
+      use_entities: true
+  - i_self_bot:
+      use_entities: true
+  - i_tidak:
+      use_entities: true
+  - i_ya:
+      use_entities: true
+  - form:
+      use_entities: true
+  - kuisioner:
+      use_entities: true
+  - i_tanya_formulir_pelayanan_legalisir_ijazah:
+      use_entities: true
+  - i_help_:
+      use_entities: true
+  - i_tampil_daftar_formulir:
+      use_entities: true
+entities:
+  - tipe
+  - nama_doc
+slots:
+  tipe:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  nama_doc:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
 responses:
-  utter_salam:
-  - text: Halo! Aku adalah Bot FAQ, bot yang dapat membantu kamu untuk menampilkan formulir akademik dan non akademik dari Universitas Sriwijaya. Ketikkan ‘help’ untuk panduan lebih lanjut.
-  utter_salam2:
-  - text: Wa’alaikumsalam. Aku adalah Bot FAQ, bot yang dapat membantu kamu untuk menampilkan formulir akademik dan non akademik dari Universitas Sriwijaya. Ketikkan ‘help’ untuk panduan lebih lanjut.
-  utter_tampil_daftar_formulir:
-  - buttons:
-    - payload: /i_tanya_kuisioner_alumni
-      title: 1. Kuisioner Alumni
-    - payload: /i_tanya_formulir_usulan_penulisan_ijazah
-      title: 2. Formulir Usulan Penulisan Ijazah
-    - payload: /i_tanya_ceklist_berkas_persyaratan_wisuda
-      title: 3. Ceklis Berkas Persyaratan Wisuda
-    - payload: /i_tanya_formulir_pelayanan_legalisir_ijazah/transkip"
-      title: 4. Formulir Pelayanan Legalisasi Ijazah/ Transkrip
-    - payload: /i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris
-      title: 5. Formulir Pembuatan Terjemahan Ijazah Bahasa Inggris
-    - payload: /i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak
-      title: 6. Formulir Pembuatan Surat Keterangan Ijazah Rusak/ Hialng
-    - payload: /i_tanya_surat_pernyataan_orang_tua
-      title: 7. Surat Pernyataan Orang Tua/ Wali
-    text: 'Berikut merupakan informasi dari list formulir :'
-  utter_tanya_kuisioner_alumni:
-  - text: 'Kuisioner Alumni dapat diakses melalui link berikut : [Link](https://ia601503.us.archive.org/11/items/formulir-kuisioner-alumni/Formulir%20Kuisioner%20Alumni.pdf)'
-  utter_tanya_formulir_usulan_penulisan_ijazah:
-  - text: 'Formulir Usulan Penulisan Ijazah dapat diakses melalui link berikut : [Link](https://ia601401.us.archive.org/1/items/formulir-usulan-penulisan-ijazah/Formulir%20Usulan%20Penulisan%20Ijazah.pdf)'
-  utter_tanya_ceklist_berkas_persyaratan_wisuda:
-  - text: 'Ceklis Berkas Persyaratan Wisuda dapat diakses melalui link berikut : [Link](https://ia601404.us.archive.org/12/items/formulir-check-list-persyaratan-wisuda/Formulir%20Check%20List%20Persyaratan%20Wisuda.pdf)'
-  utter_tanya_formulir_pelayanan_legalisir_ijazah/transkip:
-  - text: 'Formulir Pelayanan Legalisasi Ijazah/ Transkrip dapat diakses melalui link berikut : [Link](https://ia601501.us.archive.org/6/items/formulir-pelayanan-legalisir-ijazah-transkrip/Formulir%20Pelayanan%20Legalisir%20Ijazah%20Transkrip.pdf)'
-  utter_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris:
-  - text: 'Formulir Pembuatan Terjemahan Ijazah Bahasa Inggris dapat diakses melalui link berikut : [Link](https://ia601509.us.archive.org/28/items/formulir-pelayanan-pembuatan-terjemahan-ijazah-transkrip-ke-dalam-bahasa-inggris/Formulir%20Pelayanan%20Pembuatan%20Terjemahan%20Ijazah%20Transkrip%20ke%20dalam%20Bahasa%20Inggris.pdf)'
-  utter_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak:
-  - text: 'Formulir Pembuatan Surat Keterangan Ijazah Rusak/ Hilang dapat diakses melalui link berikut : [Link](https://ia601404.us.archive.org/24/items/formulir-pelayanan-pembuatan-surat-keterangan-pengganti-ijazah-transkrip-yang-rusak-hilang/Formulir%20Pelayanan%20Pembuatan%20Surat%20Keterangan%20Pengganti%20Ijazah%20Transkrip%20yang%20Rusak%20Hilang.pdf)'
-  utter_tanya_surat_pernyataan_orang_tua:
-  - text: 'Surat Pernyataan Orang Tua/ Wali dapat diakses melalui link berikut : [Link](https://ia601506.us.archive.org/22/items/formulir-surat-pernyataan-orang-tua-atau-wali-mahasiswa/Formulir%20Surat%20Pernyataan%20Orang%20Tua%20atau%20Wali%20Mahasiswa.pdf)'
-  utter_terima_kasih:
-  - text: Senang bisa membantu
-  utter_tawaran_lain:
-  - buttons:
-    - payload: /i_tampil_daftar_formulir
-      title: Ya
-    - payload: /i_terima_kasih
-      title: Tidak
-    text: Ada lagi yang bisa bot bantu? :>
   utter_self_bot:
-  - text: Salam kenal bujang dan gadis! Aku adalah Bot FAQ, bot yang dapat membantu kamu untuk menampilkan formulir akademik dan non akademik dari Universitas Sriwijaya. Ketikkan ‘help’ untuk panduan lebih lanjut.
-  utter_help_:
-  - text: Untuk saat ini Bot FAQ hanya dapat menampilkan formulir. Ketikkan ‘formulir’ untuk menampilkan daftar formulir yang ada.
-  utter_lainnya:
-  - text: Informasi tidak tersedia. Mohon periksa lagi apakah terdapat kesalahan dalam pengetikan. Anda dapat melihat daftar formulir yang tersedia dengan mengetikkan “formulir”.
-actions: []
+    - text: Salam kenal bujang dan gadis! Aku adalah Bot FAQ, bot yang dapat membantu kamu untuk menampilkan formulir akademik dan non akademik dari Universitas Sriwijaya.
+  utter_content:
+    - buttons:
+        - payload: /form{"tipe":"formulir"}
+          title: Formulir
+        - payload: /kuisioner{"tipe":"kuisioner"}
+          title: Kuisioner
+      text: Jenis dokumen apa yang kamu butuhkan?
+  utter_services_kuisioner:
+    - buttons:
+        - payload: /i_tanya_kuisioner_alumni{{"nama_doc":"Kuisioner Alumni"}}
+          title: Kuisioner Alumni
+      text: Silakan pilih dokumen yang kamu butuhkan.
+  utter_services:
+    - buttons:
+        - payload: /i_tanya_formulir_usulan_penulisan_ijazah{{"nama_doc":"Formulir Usulan Penulisan Ijazah"}}
+          title: Formulir Usulan Penulisan Ijazah
+        - payload: /i_tanya_ceklist_berkas_persyaratan_wisuda{{"nama_doc":"Ceklis Berkas Persyaratan Wisuda"}}
+          title: Ceklis Berkas Persyaratan Wisuda
+        - payload: /i_tanya_formulir_pelayanan_legalisir_ijazah/transkip{{"nama_doc":"Formulir Pelayanan Legalisasi Ijazah/ Transkrip"}}
+          title: Formulir Pelayanan Legalisasi Ijazah/ Transkrip
+        - payload: /i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris{{"nama_doc":"Formulir Pembuatan Terjemahan Ijazah Bahasa Inggris"}}
+          title: Formulir Pembuatan Terjemahan Ijazah Bahasa Inggris
+        - payload: /i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak{{"nama_doc":"Formulir Pembuatan Surat Keterangan Ijazah Rusak/ Hilang"}}
+          title: Formulir Pembuatan Surat Keterangan Ijazah Rusak/ Hilang
+        - payload: /i_tanya_surat_pernyataan_orang_tua{{"nama_doc":"Surat Pernyataan Orang Tua/ Wali"}}
+          title: Surat Pernyataan Orang Tua/ Wali
+      text: Silakan pilih dokumen yang kamu butuhkan.
+  utter_terima_kasih:
+    - text: Senang bisa membantu
+  utter_check:
+    - text: Sabar ya, bot cek dulu dokumen yang kamu mau...
+  utter_ask:
+    - buttons:
+        - payload: /i_ya
+          title: Ya
+        - payload: /i_tidak
+          title: Tidak
+      text: "Apakah ada lagi yang bisa bot bantu?"
+  utter_form:
+    - text: "Berikut merupakan daftar formulir yang tersedia:"
+  utter_kuisioner:
+    - text: "Berikut merupakan daftar kuisioner yang tersedia:"
+actions:
+  - action_show_content
+  - action_restart
+  - action_choose
 forms: {}
 e2e_actions: []

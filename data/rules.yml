@@ -1,29 +1,7 @@
 version: "2.0"
 
 rules:
-
-- rule: menjawab salam
-  steps:
-  - intent: i_salam
-  - action: utter_salam
-
-- rule: menjawab salam v2
-  steps:
-  - intent: i_salam2
-  - action: utter_salam2
-
-- rule: menjawab pernyataan setuju dan terimakasih pengguna
-  steps:
-  - intent: i_terima_kasih
-  - action: utter_terima_kasih
-
-- rule: memperkenalkan diri bot
-  steps:
-  - intent: i_self_bot
-  - action: utter_self_bot
-
-- rule: membantu pengguna untuk menggunakan bot
-  steps:
-  - intent: i_help_
-  - action: utter_help_
-
+  - rule: menjawab pernyataan setuju dan terimakasih pengguna
+    steps:
+      - intent: i_terima_kasih
+      - action: utter_terima_kasih
