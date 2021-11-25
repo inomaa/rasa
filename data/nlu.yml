@@ -1,154 +1,133 @@
 version: "2.0"
-
 nlu:
-intent: i_salam
+- synonym: ijazah rusak
   examples: |
-    - Hi
-    - Hai
-    - Halo
-    - Hallo
-    - Helo
-    - Hello
-    - Selamat pagi
-    - Selamat siang
-    - Selamat Malam
-    - Halo selamat pagi
-    - Halo selamat siang
-    - Halo selamat malam
-
-- intent: i_salam2
+    - ijazah hilang
+- synonym: formulir
   examples: |
-    - Assalamualaikum
-    - Aslmlkm
-    - Asalamu’alaikum
-    - Assalamualaikum warahmatullahi wabarakatuh
-    - Assalamualaikum wr wb
-    - Assalamualaikum wr. wb
-
+    - form
+    - formuler
+- synonym: pernyataan ortu
+  examples: |
+    - pernyataan orang tua
+- synonym: kuisioner
+  examples: |
+    - kuis
+    - kuisionir
+- synonym: kuisioner alumni
+  examples: |
+    - kuis alumni
+    - kuisionir alumni
+- synonym: persyaratan wisuda
+  examples: |
+    - syarat wisuda
+- synonym: penulisan ijazah
+  examples: |
+    - tulis ijazah
+- intent: form
+  examples: |
+    - [formulir](tipe)
+    - [form](tipe)
+    - [formuler](tipe)
+    - tampil [formulir](tipe)
+    - tampil daftar [formulir](tipe)
+    - daftar [formulir](tipe)
+    - lihat [formulir](tipe)
+- intent: kuisioner
+  examples: |
+    - [kuisioner](tipe)
+    - [kuis](tipe)
+    - [kuisionir](tipe)
+    - tampil [kuisioner](tipe)
+    - tampil daftar [kuisioner](tipe)
+    - daftar [kuisioner](tipe)
+    - lihat [kuisioner](tipe)
 - intent: i_tanya_kuisioner_alumni
   examples: |
-    - Kuisioner alumni
-    - Kuisioner untuk alumni
-    - Form kuisioner alumni
-    - Form kuisioner untuk alumni
-    - Mohon tampilkan kuisioner alumni
-    - Tolong tampilkan kuisioner alumni
-    - Mohon tampilkan form kuisioner alumni
-    - Tolong tampilkan form kuisioner alumni
-    - Mohon tampilkan form kuisioner untuk alumni
-    - Tolong tampilkan form kuisioner untuk alumni
-    - Mohon tampilkan kuisioner
-    - Tampil kuisioner
-    - Tampil kuisioner alumni
-    - Tampil kuisioner untuk alumni
-    - Tampilkan kuisioner
-    - Tampilkan kuisioner alumni
-    - Tampilkan kuisioner untuk alumni
-
+    - kuisioner untuk alumni [kuisioner alumni](nama_doc)
+    - [kuisioner alumni](nama_doc)
+    - [kuisionir alumni](nama_doc)
+    - [kuis alumni](nama_doc)
+    - tampil [kuisioner alumni](nama_doc)
+    - lihat [kuisioner alumni](nama_doc)
+    - formulir [kuisioner alumni](nama_doc)
+    - mohon tampil [kuisioner alumni](nama_doc)
 - intent: i_tanya_formulir_usulan_penulisan_ijazah
   examples: |
-    - Formulir usulan penulisan ijazah
-    - Formulir usulan pembuatan ijazah
-    - Formulir penulisan ijazah
-    - Formulir pengusulan penulisan ijazah
-    - Tampil form usulan penulisan ijazah
-    - Tampil form penulisan ijazah
-    - Tampil form untuk usulan penulisan ijazah
-    - Tampil form penulisan ijazah
-    - Tampilkan form usulan penulisan ijazah
-    - Tampilkan form penulisan ijazah
-    - Tampilkan form untuk usulan penulisan ijazah
-    - Tampilkan form penulisan ijazah
-
+    - formulir usulan [penulisan ijazah](nama_doc)
+    - [tulis ijazah](nama_doc)
+    - formulir [penulisan ijazah](nama_doc)
+    - formulir pengusulan [penulisan ijazah](nama_doc)
+    - formulir usulan [penulisan ijazah](nama_doc)
+    - tampil formulir usulan  [penulisan ijazah](nama_doc)
+    - tampil formulir [penulisan ijazah](nama_doc)
+    - tampil formulir pengusulan [penulisan ijazah](nama_doc)
+    - tampil usulan [penulisan ijazah](nama_doc)
+    - usulan [penulisan ijazah](nama_doc)
+    - pengusulan  [penulisan ijazah](nama_doc)
+    - [penulisan ijazah](nama_doc)
+    
 - intent: i_tanya_ceklist_berkas_persyaratan_wisuda
   examples: |
-    - Formulir berkas checklist berkas persyaratan wisuda
-    - Formulir berkas checklist persyaratan wisuda
-    - Formulir checklist berkas persyaratan wisuda
-    - Formulir checklist persyaratan wisuda
-    - Formulir berkas persyaratan wisuda
-    - Formulir persyaratan wisuda
-    - Tampil berkas checklist berkas persyaratan wisuda
-    - Tampil berkas checklist persyaratan wisuda
-    - Tampil checklist berkas persyaratan wisuda
-    - Tampil checklist persyaratan wisuda
-    - Tampil berkas persyaratan wisuda
-    - Tampil persyaratan wisuda
-
-- intent: i_tanya_formulir_pelayanan_legalisir_ijazah/transkip
+    - [syarat wisuda](nama_doc)
+    - formulir berkas ceklis [persyaratan wisuda](nama_doc)
+    - formulir ceklis berkas [persyaratan wisuda](nama_doc)
+    - [persyaratan wisuda](nama_doc)
+    - formulir ceklis [persyaratan wisuda](nama_doc)
+    - berkas [persyaratan wisuda](nama_doc)
+    - formulir [persyaratan wisuda](nama_doc)
+    - ceklis berkas [persyaratan wisuda](nama_doc)
+    - berkas ceklis [persyaratan wisuda](nama_doc)
+    - ceklis berkas [persyaratan wisuda](nama_doc)
+    - formulir ceklis berkas [persyaratan wisuda](nama_doc)
+- intent: i_tanya_formulir_pelayanan_legalisir_ijazah
   examples: |
-    - Formulir pelayanan legalisir ijazah
-    - Formulir pelayanan legalisir
-    - Formulir legalisir Ijazah
-    - Formulir pelayanan legalisir transkrip
-    - Formulir legalisir transkrip
-    - Tampil pelayanan legalisir ijazah
-    - Tampil pelayanan legalisir
-    - Tampil legalisir ijazah
-    - Tampil pelayanan legalisir transkrip
-    - Tampil legalisir transkrip
-    - Tampilkan pelayanan legalisir ijazah
-    - Tampilkan pelayanan legalisir
-    - Tampilkan legalisir ijazah
-    - Tampilkan pelayanan legalisir transkip
-    - Tampilkan legalisir transkrip
-
+    - [legalisir ijazah](nama_doc)
+    - legalisir [legalisir ijazah](nama_doc)
+    - legalisir transkrip [legalisir ijazah](nama_doc)
+    - formulir legalisir [legalisir ijazah](nama_doc)
+    - formulir pelayanan legalisir [legalisir ijazah](nama_doc)
+    - formulir pelayanan legalisir ijazah/transkrip [legalisir ijazah](nama_doc)
+    - formulir pelayanan legalisir ijazah / transkrip [legalisir ijazah](nama_doc)
+    - Tampil [legalisir ijazah](nama_doc)
+    - tampil formulir [legalisir ijazah](nama_doc)
+    - legalisir transkrip [legalisir ijazah](nama_doc)
+    - formulir legalisir transkrip [legalisir ijazah](nama_doc)
 - intent: i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris
   examples: |
-    - Tampilkan formulir pembuatan terjemahan ijazah ke bahasa inggris
-    - Mohon tampilkan formulir  pembuatan terjemahan ijazah ke bahasa inggris
-    - Formulir pembuatan terjemahan ijazah ke bahasa inggris
-    - Tolong tampilkan formulir pembuatan terjemahan ijazah ke bahasa inggris
-    - Lihat  formulir pembuatan terjemahan ijazah ke bahasa inggris
-    - Formulir terjemahan ijazah ke bahasa inggris
-    - Formulir pembuatan terjemahan ijazah bahasa inggris
-    - Tampilkan formulir terjemahan ijazah ke bahasa inggris
-    - Tampil formulir terjemahan ijazah bahasa inggris
-    - Tampil formulir terjemahan ijazah untuk bahasa inggris
-
+    - formulir  [terjemahan ijazah](nama_doc)
+    - formulir terjemahan ijazah bahasa inggris [terjemahan ijazah](nama_doc)
+    - formulir pembuatan terjemahan ijazah bahasa inggris [terjemahan ijazah](nama_doc)
+    - formulir pembuatan [terjemahan ijazah](nama_doc) bahasa inggris
+    - formulir pengajuan [terjemahan ijazah](nama_doc)
+    - ijazah bahasa inggris [terjemahan ijazah](nama_doc)
+    - ijazah bing [terjemahan ijazah](nama_doc)
+    - pembuatan [terjemahan ijazah](nama_doc) bahasa inggris
+    - terjemahan ijazah [terjemahan ijazah](nama_doc)
+    - [terjemahan ijazah](nama_doc)
 - intent: i_tanya_formulir_pembuatan_surat_keterangan_ijazah_rusak
   examples: |
-    - Tampilkan formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang 
-    - Tampilkan formulir surat keterangan pengganti ijazah yang rusak
-    - Tampilkan formulir surat keterangan pengganti ijazah yang hilang
-    - Mohon tampilkan formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
-    - Mohon tampilkan formulir surat keterangan pengganti ijazah yang rusak
-    - Mohon tampilkan formulir surat keterangan pengganti ijazah yang hilang
-    - formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
-    - formulir surat keterangan pengganti ijazah yang rusak
-    - Formulir pembuatan surat keterangan ijazah rusak
-    - formulir surat keterangan pengganti ijazah yang hilang
-    - Lihat formulir pembuatan surat keterangan pengganti ijazah yang rusak/hilang
-    - Lihat formulir surat keterangan pengganti ijazah yang rusak
-    - Lihat formulir surat keterangan pengganti ijazah yang hilang
-    - Tampil surat keterangan ijazah rusak
-    - Tampil surat keterangan ijazah hilang
-    - Tampil surat keterangan ijazah yang rusak
-    - Tampil surat keterangan ijazah yang  hilang
-    - Surat keterangan ijazah rusak
-    - Surat keterangan ijazah hilang
-
+    - formulir pembuatan surat keterangan pengganti [ijazah rusak](nama_doc) / hilang
+    - formulir pembuatan surat keterangan pengganti [ijazah rusak](nama_doc)
+    - formulir pembuatan surat keterangan[ijazah rusak](nama_doc)
+    - formulir pembuatan surat keterangan penggganti ijazah rusak hilang [ijazah rusak](nama_doc)
+    - surat keterangan hilang rusak [ijazah rusak](nama_doc)
+    - ijazah hilang [ijazah rusak](nama_doc)
+    - [ijazah rusak](nama_doc)
+    - lihat formulir surat keterangan hilang rusak[ijazah rusak](nama_doc)
+    - tampil surat keterangan hilang rusak [ijazah rusak](nama_doc)
+    - tampil surat keterangan [ijazah hilang](nama_doc)
+    - surat keterangan ijazah rusak [ijazah hilang](nama_doc)
 - intent: i_tanya_surat_pernyataan_orang_tua
   examples: |
-    - Surat pernyataan orang tua
-    - Surat pernyataan ortu
-    - Surat pernyataan wali
-    - Surat pernyataan wali mahasiswa
-    - Mohon tampilkan surat pernyataan orang tua
-    - Mohon tampilkan surat pernyataan wali mahasiswa
-    - Mohon info surat pernyataan orang tua
-    - Mohon info surat pernyataan wali mahasiswa
-    - Melihat surat pernyataan orang tua
-    - Melihat surat pernyataan wali mahasiswa
-    - Tampilkan surat pernyataan orang tua
-    - Tampilkan surat pernyataan wali mahasiswa
-    - Tampil surat pernyataan untuk orang tua
-    - Tampil surat pernyataan untuk wali mahasiswa
-    - Apakah saya bisa minta informasi surat pernyataan orang tua
-    - Apakah saya bisa minta informasi surat pernyataan wali mahasiswa
-    - Informasi surat pernyataan orang tua
-    - Informasi surat pernyataan wali mahasiswa
-
+    - [pernyataan orang tua](nama_doc)
+    - [pernyataan ortu](nama_doc)
+    - Surat [pernyataan ortu](nama_doc)
+    - Mohon tampilkan surat [pernyataan ortu](nama_doc)
+    - Mohon tampilkan surat ortu[pernyataan ortu](nama_doc)
+    - tampil surat [pernyataan ortu](nama_doc)
+    - pernyataan ortu wali [pernyataan ortu](nama_doc)
+    - pernyataan wali [pernyataan ortu](nama_doc)
 - intent: i_terima_kasih
   examples: |
     - Terima kasih
@@ -166,35 +145,60 @@ intent: i_salam
     - Baik terima kasih
     - Baik
     - Sip
-
-- intent: i_tampil_daftar_formulir
-  examples: |
-    - Formulir
-    - Daftar Formulir
-    - Tampil daftar formulir
-    - Tampilkan daftar formulir
-    - info daftar formulir
-    - informasi daftar formulir
-    - List daftar formulir
-    - List formulir
-    - Semua formulir
-    - Tampilkan list formulir
+    - terimakasih
 
 - intent: i_self_bot
   examples: |
-    - Kamu siapa
-    - Kamu syp
-    - Syp kamu
-    - Siapa kamu
-    - Introduce
-    - Perkenalan
-    - Siapa
-    - Syp
+    - hai
+    - halo
+    - helo
+    - assalamualaikum
+    - selamat siang
+    - selamat pagi
+    - selamat malam
+    - permisi
     - Test
-
-- intent: i_help_
-  examples: |
+    - hi
+    - tolong
     - Panduan
     - Tolong
     - Help
     - Daftar panduan
+    - siapa kamu
+    - siapa bot
+    - bot
+- intent: i_ya
+  examples: |
+    - Ya
+    - y
+    - iya
+    - yes
+- intent: i_tidak
+  examples: |
+    - Tidak
+    - tdk
+    - g
+    - gk
+    - nggak
+    - ga
+    - no
+    - n
+- intent: restart
+  examples: |
+    - ulang chat
+    - restart
+    - mulai lagi
+    - mulai ulang
+- lookup: nama_doc
+  examples: |
+    - kuisioner alumni
+    - penulisan ijazah
+    - persyaratan wisuda
+    - legalisir ijazah
+    - terjemahan ijazah
+    - ijazah rusak
+    - pernyataan ortu
+- lookup: tipe
+  examples: |
+    - formulir
+    - kuisioner
