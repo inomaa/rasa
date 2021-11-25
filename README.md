@@ -1,4 +1,9 @@
-# rasa
-chatbot rasa
-test9gj 9qhap
-hahahe
+# RASA CHATBOT PROJECT
+# MADE BY KELOMPOK 12
+Anggota kel 12 :
+- IQBAL FANOSA WIOTAMA - 0902118194002
+- RACHEL PANE - 09021281924069
+- Helmi Farizki - 09021281924037
+- M Ilham Feby Febriyanto - 09021281924028
+- Wendy Desmariansyah - 09021381924138
+- Adawiyyah Latifah - 09021281924082
