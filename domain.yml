@@ -25,7 +25,7 @@ slots:
     values:
       - formulir
       - kuisioner
-    influence_conversation: true
+    influence_conversation: false
   nama_doc:
     type: categorical
     values:
@@ -36,7 +36,7 @@ slots:
       - ijazah rusak
       - pernyataan ortu
       - kuisioner alumni
-    influence_conversation: true
+    influence_conversation: false
 responses:
   utter_please_rephrase:
   - text: maaf saya tidak mengerti, ketik 'help' untuk bantuan.
