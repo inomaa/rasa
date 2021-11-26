@@ -9,3 +9,7 @@ rules:
     steps:
       - intent: nlu_fallback
       - action: utter_please_rephrase
+  - rule: mengatur respond default bot ketika user menginput kalimat yang tidak dimengerti # 2
+    steps:
+      - intent: out_of_scope
+      - action: utter_please_rephrase

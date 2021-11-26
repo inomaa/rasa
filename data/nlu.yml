@@ -24,6 +24,37 @@ nlu:
 - synonym: penulisan ijazah
   examples: |
     - tulis ijazah
+- synonym: legalisir ijazah
+  examples: |
+    - legalisir transkrip
+    - legalisasi ijazah
+    - legalisasi transkrip
+- intent: out_of_scope
+  examples: |
+    - saya pesan makanan
+    - berapa 2 + 2 ?
+    - siapa presiden amerika ?
+    - jumlah anak ayam berapa
+    - siapa di langit ketujuh
+    - makan apa kemarin ?
+    - langit cerah hari ini
+    - bulan tahun depan hujan
+    - presiden indonesia
+    - siapa saya 
+    - siapa istri saya
+    - menu makan malam
+    - tiket ke amerika
+    - malam ini cerah
+    - besok hujan
+    - apakah saya ganteng
+    - 1+1
+    - 5
+    - 10
+    - dunia ini kejam
+    - pindang ikan
+    - rendang enak
+    - mobil cepat
+    - naik kuda
 - intent: form
   examples: |
     - [formulir](tipe)
@@ -83,16 +114,32 @@ nlu:
 - intent: i_tanya_formulir_pelayanan_legalisir_ijazah
   examples: |
     - [legalisir ijazah](nama_doc)
-    - legalisir [legalisir ijazah](nama_doc)
+    - [legalisir ijazah](nama_doc) / transkrip
+    - [legalisasi ijazah](nama_doc)
+    - [legalisasi ijazah](nama_doc) / transkrip
     - legalisir transkrip [legalisir ijazah](nama_doc)
-    - formulir legalisir [legalisir ijazah](nama_doc)
-    - formulir pelayanan legalisir [legalisir ijazah](nama_doc)
-    - formulir pelayanan legalisir ijazah/transkrip [legalisir ijazah](nama_doc)
-    - formulir pelayanan legalisir ijazah / transkrip [legalisir ijazah](nama_doc)
+    - formulir [legalisir ijazah](nama_doc)
+    - formulir [legalisir ijazah](nama_doc) / transkrip
+    - formulir [legalisasi ijazah](nama_doc)
+    - formulir [legalisasi ijazah](nama_doc) / transkrip
+    - formulir pelayanan [legalisir ijazah](nama_doc)
+    - formulir pelayanan [legalisir ijazah](nama_doc) / transkrip
+    - formulir pelayanan [legalisasi ijazah](nama_doc)
+    - formulir pelayanan [legalisasi ijazah](nama_doc) / transkrip
     - Tampil [legalisir ijazah](nama_doc)
+    - Tampil [legalisir ijazah](nama_doc) / transkrip
+    - Tampil [legalisasi ijazah](nama_doc)
+    - Tampil [legalisasi ijazah](nama_doc) / transkrip
     - tampil formulir [legalisir ijazah](nama_doc)
-    - legalisir transkrip [legalisir ijazah](nama_doc)
-    - formulir legalisir transkrip [legalisir ijazah](nama_doc)
+    - tampil formulir [legalisir ijazah](nama_doc) / transkrip
+    - Tampil formulir [legalisasi ijazah](nama_doc)
+    - Tampil formulir [legalisasi ijazah](nama_doc) / transkrip
+    - [legalisir transkrip](nama_doc)
+    - formulir [legalisir transkrip](nama_doc)
+    - [legalisasi transkrip](nama_doc)
+    - formulir [legalisasi transkrip](nama_doc)
+    - formulir pengajuan [legalisasi transkrip]
+    - formulir usulan [legalisir transkrip]
 - intent: i_tanya_formulir_pembuatan_terjemahan ijazah_bahasa_inggris
   examples: |
     - formulir  [terjemahan ijazah](nama_doc)
@@ -123,11 +170,16 @@ nlu:
     - [pernyataan orang tua](nama_doc)
     - [pernyataan ortu](nama_doc)
     - Surat [pernyataan ortu](nama_doc)
+    - Surat [pernyataan orang tua](nama_doc)/wali
+    - Surat [pernyataan orang tua](nama_doc) / wali
+    - formulir [pernyataan ortu](nama_doc) / wali
     - Mohon tampilkan surat [pernyataan ortu](nama_doc)
     - Mohon tampilkan surat ortu[pernyataan ortu](nama_doc)
     - tampil surat [pernyataan ortu](nama_doc)
-    - pernyataan ortu wali [pernyataan ortu](nama_doc)
-    - pernyataan wali [pernyataan ortu](nama_doc)
+    - [pernyataan ortu](nama_doc) / wali 
+    - [pernyataan wali](nama_doc)
+    - surat [pernyataan wali](nama_doc)
+    - formulir [pernyataan wali](nama_doc)
 - intent: i_terima_kasih
   examples: |
     - Terima kasih
